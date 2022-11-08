@@ -8,7 +8,7 @@
 </head> <!-- <- Contains metadata of the document -->
 <body>
     <p>Welcome to the <span><em><a href="#repo">SH885RyanHe</a></em> <strong>HTML Notes!</strong> <!-- <- Span Block --> </span> HTML is a WIP for me, so I'm just going to put in the stuff I learned here.</p> <!-- <- Printing with p element right here. --> 
-    <a id="click" href="https://github.com/SH885RyanHe/SH885RyanHe.github.io/blob/main/pepe.html" target="_blank">Click this to interpret the meanings of the seemingly rando stuff i have on the screen rn!</a><br> <!-- <- Line Break --> 
+    <a id="click" href="https://github.com/SH885RyanHe/SH885RyanHe.github.io/blob/main/pepe.html" target="_blank">Source Code</a><br> <!-- <- Line Break --> 
 
 
     <h1><strong>CHAPTER 1 - FUN-DEMENTAL HTML</strong></h1>
@@ -35,7 +35,7 @@
             <li>Thanks for Reading!</li>
         </ol> <!-- <- ORDERED list --> 
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br>
     <div>
         
         <a id="repo" href="https://sh885ryanhe.github.io">A link to my repo</a><br>
@@ -48,5 +48,93 @@
         <a><video src="https://www.linkedclassroom.com/pluginfile.php/147076/mod_resource/content/1/What%20are%20Mean%2C%20Median%20and%20Mode%20.mp4" width="1200" height="600" controls>Video is gone... oopsies :(</video></a>
     </div>
    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/iZW3l1n9Ins" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+   <br><br>
+   <h1>CHAPTER 2 - TABLE</h1>
+   <div id="table">
+    <table>
+        <tr>
+            <thead>
+            <th></th>
+            <th scope="col">Tree<!-- th = heading of table, with scope of "column" --></th>
+            <th scope="col">Tere</th>
+            </thead>
+        </tr>
+        <tr>
+            <tbody>
+            <th scope="row">ok</th>
+            <td rowspan="2">throw.</td><!--How the heck does rowspan work-->
+            <td colspan="2">also throw but threw.</td> <!--How the heck does colspan work-->
+            </tbody>   
+        </tr>
+        <tfoot></tfoot><!--Placeholder lol-->
+    </table>
+   </div>
+   <h1>CHAPTER 3 - FORMS</h1>
+   <div id="form">
+   <br><br>
+    <form action="./tree.html" method="POST">
+        <label for="gb">Do you think trees are good or bad? Explain.</label><!--text 1.0-->
+            <input type="text" name="trees_g/b" id="gb" required minlength="10" maxlength="500" pattern="[a-zA-Z0-9]+"><!--required field + length restriction + text restriction-->
+        <br>
+        <label for="pw">PIN for Verification:</label><!--pw-->
+            <input type="password" name="veri-pw" id="pw" required>
+        <br>
+        <label for="time">Year when born:</label><!--number-->
+            <input type="number" name="byear" id="time" step="1" min="1" max="10"> <!--DIDNT WORK LOL-->
+        <br>
+        
+        <label for="dylike">Do you like yourself?</label><!--range-->
+        <span>No</span>
+            <input type="range" name="like" id="dylike" min="0" max="10" step="1">
+        <span>Yes</span>
+        <br>
+
+        <p>Do you like any of the following trees?</p><!--checkboxes-->
+        <label for="pine">Pine!</label>
+            <input id="pine" name="teer" type="checkbox" value="pine">
+        <br>
+        <label for="redwood">Redwood!</label>
+            <input id="redwood" name="teer" type="checkbox" value="redwood">
+        <br>
+        <label for="palm">Palm!</label>
+            <input id="palm" name="teer" type="checkbox" value="palm">
+        <br>
+        <label for="nope">Nah bro</label>
+            <input id="nope" name="teer" type="checkbox" value="nope">
+        <br><br>
+        <p>Which one is the imposter?</p><!--radio-->
+        <label for="wee">weeee</label>
+            <input type="radio" name="ans" id="wee" value="weeeee">
+        <br>
+        <label for="wee">wowza</label>
+            <input type="radio" name="ans" id="wow" value="wowza">
+        <br><br>
+        <label for="huh">Huh ok</label><!--dropdown-->
+            <select id="huh" name="ok">
+                <option value="hu">hu</option>
+                <option value="uh">uh</option>
+                <option value="hh">hh</option>
+                <option value="uu">uu</option>
+                <option value="huh">huh</option>
+        </select>
+        <br><br>
+        <label for="animal">what is the best animal</label><!--datalist (text 2.0)-->
+            <input type="text" list="animals-list" id="animal" name="ani">
+ 
+            <datalist id="animals-list">
+                <option value="hooman"></option>
+                <option value="baboon"></option>
+                <option value="cat"></option>
+                <option value="dog"></option>
+                <option value="whale"></option>
+                <option value="other"></option>  
+            </datalist>
+            <br>
+            <label for="tree">Publish a TreeBlog</label>
+                <textarea id="tree" name="tree-blog" rows="10" cols="40">@tree-blog-110822:</textarea>
+        <br><br><br>
+        <input type="submit" value="Send your responses!">
+    </form>
+</div>
 </body>
 </html>
