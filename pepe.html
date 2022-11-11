@@ -46,6 +46,8 @@
         <a id="dl" href="https://github.com/sh885ryanhe" download="ok">Placeholder for downloading a file</a><br>
         <a id="mail" href="mailto:wyanh30@outlook.com">Mail me</a>
     </div>
+
+    <h1>Chapter 5 - mdn case studies</h1>
     <dl>
         <dt>This is a Description list Title</dt>
         <dd>
@@ -81,30 +83,32 @@
 
     <div>
         <img src="https://sh885ryanhe.github.io/a%20big%20bag/media/IMG_0820.JPG" width="1200" height="800" alt="andrew">
-        <video src="a big bag/media/yt5s.com-Big guy stares.mp4" width="1200" height="600" controls loop>Video is gone... oopsies :(</video><!--stick autoplay into there-->
+        <video src="bigbag/media/stare.mp4" width="1200" height="600" controls loop>Video is gone... oopsies :(</video><!--stick autoplay into there-->
+
+        <!--Here is an expert at work moving the src out of the video -->
+        <video controls>
+            <source src="bigbag/media/stare.mp4" type="video/mp4">
+            <p>Hmm. Seems like the file got lost somewhere up above. Won't you look at something else here?</p>
+        </video>
+        <!--Types of <video> attributes
+            controls
+            width="w"
+            height="h"
+            autoplay
+            loop
+            muted
+            preload="auto" <- buffering the video; none, auto, metadata
+            poster="poster.png"
+        
+        <track> for webvtts <track kind="subtitles" src="subtitles_zh-cn.vtt" srclang="zh" label="Chinese">-->
     </div>
-   
+   <hr>
    <br><br>
    <h1>CHAPTER 2 - TABLE</h1>
-   <div id="table">
-    <table>
-        <tr>
-            <thead>
-            <th></th>
-            <th scope="col">Tree<!-- th = heading of table, with scope of "column" --></th>
-            <th scope="col">Tere</th>
-            </thead>
-        </tr>
-        <tr>
-            <tbody>
-            <th scope="row">ok</th>
-            <td rowspan="2">throw.</td><!--How the heck does rowspan work-->
-            <td colspan="2">also throw but threw.</td> <!--How the heck does colspan work-->
-            </tbody>   
-        </tr>
-        <tfoot></tfoot><!--Placeholder lol-->
-    </table>
-   </div>
+   <p>uh so i dont actually know how it works so coming later :nerd:</p>
+   <p>I'll come back to it, but for now its at the bottom of the document</p>
+
+   
    <h1>CHAPTER 3 - FORMS</h1>
    <div id="form">
    <br><br>
@@ -201,18 +205,34 @@
         </section>
         <section>
             <figure>
-                <img src="a big bag/media/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg" width="600" height="1200">
+                <img src="bigbag/media/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg" width="600" height="1200">
                 <figcaption>
                     <p>Very cool Gradient by <strong>Thomas Lefebvre</strong> on Unsplash!</p>
                 </figcaption>
             </figure>
             <audio controls>
-                <source src="a big bag/media/yt5s.com - glue70 - Casin (128 kbps).mp3" type="audio/mp3" >
+                <source src="bigbag/media/casin.mp3" type="audio/mp3" >
             </audio>
                 <br>
                 <span><strong>Casin by glue70</strong></span>
-            <embed src="a big bag/media/channels4_banner.jpeg">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/iZW3l1n9Ins" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <embed src="bigbag/media/channels4_banner.jpeg">
+    <h2>Embedding Subsection</h2>
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/iZW3l1n9Ins" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <br>
+            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.268184328633!2d-117.07032350209776!3d33.47364617982922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db82107fc13d1b%3A0x25f7696258175c86!2sRutherford%20St%2C%20Temecula%2C%20CA%2092592%2C%20USA!5e0!3m2!1sen!2s!4v1668173053969!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <style>
+                iframe {
+                    border: none;
+                }
+            </style>
+            <iframe
+                src="bigbag/media/Biology.pdf"
+                width="100%"
+                height="500"
+                allowfullscreen
+                >
+                <!--sandbox-->
+            <!--</iframe> <- Embedding is disabled here cuz mdn says security reasons :)))-->
         </section>
     </main>
     <footer>
@@ -225,3 +245,25 @@
 
 </body>
 </html>
+
+
+
+<!--<div id="table">
+    <table>
+        <tr>
+            <thead>
+            <th></th>
+            <th scope="col">Tree <!-- th = heading of table, with scope of "column" --></th>
+            <!--<th scope="col">Tere</th>
+            </thead>
+        </tr>
+        <tr>
+            <tbody>
+            <th scope="row">ok</th>
+            <td rowspan="2">throw.</td><!--How the heck does rowspan work-->
+            <!--<td colspan="2">also throw but threw.</td> <!--How the heck does colspan work-->
+            <!--</tbody>   
+        </tr>
+        <tfoot></tfoot><!--Placeholder lol-->
+    <!--</table>
+   </div>-->
