@@ -1,6 +1,7 @@
 * {
     font-family:monospace;
     
+    
 }
 
 p {
@@ -13,9 +14,20 @@ h1 {
     font-size: 30px;
 }
 
-h2 {
+h2, #Bee {
     color: #e09a18;
     font-size: 26px;
+}
+
+#Ae, #Bee, #Cee, #Dee, #Yee, #Ef {
+    border: 3px solid #5f9ea0;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -24,7 +36,7 @@ h3 {
 }
 
 h4 {
-    color: #0f510f;
+    color: #0f510f !important; overrider
     font-size: 18px;
 }
 
@@ -45,13 +57,13 @@ h6 {
     font-weight: bold;
 }
 
-
 code {
     color: seagreen;
 }
 
 #list-hw {
-    color: #a7abbb
+    color: #a7abbb;
+    text-align: right;
 }
 
 blockquote {
@@ -72,16 +84,27 @@ input:focus {
 }
 
 .cascoding {
-    font-size: 40px
+    font-size: 40px;
+    text-align: center
 }
 
 time {
     color: #446f71;
     font-weight: bolder;
     font-size: 20px;
+    text-align: justify <- keep same with parent element
 }
 
 a:visited {
     color:#446f71;
-    font-weight: bold;
+    font-weight: bold; bgclr, opac
 }
+
+.img-midt {
+    background-image: url("./bigbag/media/IMG_2561.JPG");
+    background-size: cover;
+    background-position: ;
+    width: 1366px;
+    height: 1024px;
+}
+
