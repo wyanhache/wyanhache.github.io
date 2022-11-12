@@ -5,6 +5,7 @@
 
 p {
     color: #5f9ea0;
+    font-size: 18px;
 }
 
 h1 {
@@ -70,8 +71,6 @@ input:focus {
     color: cadetblue;
 }
 
-
-
 .cascoding {
     font-size: 40px
 }
@@ -79,7 +78,7 @@ input:focus {
 time {
     color: #446f71;
     font-weight: bolder;
-    font-size: 20px
+    font-size: 20px;
 }
 
 a:visited {
