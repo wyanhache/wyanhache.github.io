@@ -8,23 +8,27 @@
     <link href="css notes weeeeee.css" rel="stylesheet">
     <style></style> <!--I don't need this rn but there you go-->
 </head> <!-- <- Contains metadata of the document -->
+
+<!--Above is Not-Displayed Content. Our Journey starts here!-->
+
 <body>
     <p>Welcome to the <span><em><a href="#repo">SH885RyanHe</a></em> <strong>HTML Notes!</strong> <!-- <- Span Block --> </span> HTML is a WIP for me, so I'm just going to put in the stuff I learned here.</p> <!-- <- Printing with p element right here. --> 
-    <p>SH885 Continues to edit this page on:</p><time datetime="2022-11-09">Novemeber 9, 2022 in Shanghai, China</time>
+    <p>SH885 Continues to edit this page on:</p><time datetime="2022-11-09">Novemeber 12, 2022 in Shanghai, China</time>
     <br>
     <a id="click" href="https://github.com/SH885RyanHe/SH885RyanHe.github.io/blob/main/pepe.html" target="_blank">Source Code</a><br> <!-- <- Line Break --> 
 
 
     <h1><strong>CHAPTER 1 - FUN-DEMENTAL HTML</strong></h1>
     <div id="alphabets"> <!-- <- This is a division! --> 
-        <h1 style="color: black;">A</h1>
+        <h1 style="color: maroon;">A</h1>
         <h2>B</h2>
         <h3>C</h3>
         <h4>D</h4>
         <h5>E</h5>
         <h6>F</h6>
     </div>
-    <div>
+
+    <div id="lists">
         <ul> <!-- <- BULLET POINT -->
             <li><strong>abc</strong></li>
             <li>american</li>
@@ -38,38 +42,40 @@
             <li>Throw.</li>
             <li>Thanks for Reading!</li>
         </ol> <!-- <- ORDERED list --> 
-    </div>
-    <hr> <!--Thematic Shift-->
-    <div>
-        
-        <a id="repo" href="https://sh885ryanhe.github.io" title="Repository of this project">A link to my repo</a><br>
-        <a id="skycrypt" href="https://sky.shiiyu.moe" target="_Blank">A link to SkyCrypt, while opening to a new page</a><br>
-        <a id="same" href="./tree.html">Directing to another document in the same directory</a><br> <!--  <- There is an ID in this! -->
-        <a id="dl" href="https://github.com/sh885ryanhe" download="ok">Placeholder for downloading a file</a><br>
-        <a id="mail" href="mailto:wyanh30@outlook.com">Mail me</a>
+
+        <dl>
+            <dt>This is a Description list Title</dt>
+            <dd>
+                Data Data dd lol.
+            </dd>
+        </dl>
     </div>
 
-    <h1>Chapter 5 - mdn case studies</h1>
-    <dl>
-        <dt>This is a Description list Title</dt>
-        <dd>
-            Data Data dd lol.
-        </dd>
-    </dl>
-    <p>idk wtf a block quote is but ok</p>
+    <div id="anchor" >
+        <a id="repo" class="anchors" href="https://sh885ryanhe.github.io" title="Repository of this project">A link to my repo</a><br>
+        <a id="skycrypt" class="anchors" href="https://sky.shiiyu.moe" target="_Blank">A link to SkyCrypt, while opening to a new page</a><br>
+        <a id="same"class="anchors" href="./tree.html">Directing to another document in the same directory</a><br> <!--  <- There is an ID in this! -->
+        <a id="dl" class="anchors" href="https://github.com/sh885ryanhe" download="ok">Placeholder for downloading a file</a><br>
+    </div>
+
+    <section id="mdnbasic">
+        <h2>HTML Structure from mdn qwq</h2>
+        <p>idk wtf a block quote is but ok</p>
     
-    Because HTML is hard, <a href="https://github.com/sh885ryanhe"> <cite>SH885RyanHe furiously said,</cite></a>
-    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-        <code>&lt;wtf is this&gt;</code> is a quote i said just now and i just want to do hw halp
-        <br><q>I hate this and I want to go to sleep -me</q>
-    </blockquote>
-    <p><abbr>YOLO</abbr> is an acronym for Yo L(Bozo) O-ratio.</p>
+        <p class="hard bold">Because HTML is hard, <a href="https://github.com/sh885ryanhe"> <cite>SH885RyanHe furiously said,</cite></a></p>
+            <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+                <code>&lt;wtf is this&gt;</code> is a quote i said just now and i just want to do hw halp
+                <br>
+                <q>I hate this and I want to go to sleep -me</q>
+            </blockquote>
 
-    <address>
-        <p>contact SH885 at <a href="mailto:wyanh30@outlook.com" title="my email">Here!</a></p>
-    </address>
+        <p><abbr>YOLO</abbr> is an acronym for Yo L(Bozo) O-ratio.</p>
 
-    <p><strong>1<sup>23</sup>=1</strong></p>
+        <address>
+            <p>contact SH885 at <a href="mailto:wyanh30@outlook.com" title="my email">Here!</a></p>
+        </address>
+
+        <p><strong>1<sup>23</sup>=1</strong></p>
 
         <!--Representing Computer Code
         <code>: For marking up generic pieces of computer code.
@@ -79,11 +85,11 @@
         <samp>: For marking up the output of a computer program.
             Can someone just end me now-->
 
-
-        <code>weeeeeeeee</code>
+        <code class="cascoding">ID &lt; CLASS &lt; TYPE</code>
         <br><br><br><br><br><br>
+    </section>
 
-    <div>
+    <div id="multimedia">
         <img src="https://sh885ryanhe.github.io/bigbag/media/IMG_0820.JPG" width="1200" height="800" alt="andrew">
         <video src="bigbag/media/stare.mp4" width="1200" height="600" controls loop>Video is gone... oopsies :(</video><!--stick autoplay into there-->
 
@@ -104,13 +110,14 @@
         
         <track> for webvtts <track kind="subtitles" src="subtitles_zh-cn.vtt" srclang="zh" label="Chinese">-->
     </div>
-   <hr>
+
+   <hr> <!--Thematic Shift-->
    <br><br>
+
    <h1>CHAPTER 2 - TABLE</h1>
    <p>uh so i dont actually know how it works so coming later :nerd:</p>
    <p>I'll come back to it, but for now its at the bottom of the document</p>
 
-   
    <h1>CHAPTER 3 - FORMS</h1>
    <div id="form">
    <br><br>
@@ -178,6 +185,7 @@
         <input type="submit" value="Send your responses!">
     </form>
     </div>
+
     <h1>CHAPTER 4 - SEMANTICS</h1>
     <header><!--header-->
         <p>In the first half of Semester 1, Year 2022, <br>students were able to identify the key thoughts of what composes a good story. </p>
@@ -187,9 +195,9 @@
         <a href="https://instagram.com">Post a story about this controversial statement!</a>
     </nav>
     </header>
-    <main>
-        <section id="summ">
-            <article>
+    <main> <!--main content-->
+        <section id="summ"> <!--Section of text-->
+            <article> <!--Article :skull:-->
                 <p>
                     Students were able to accomplish this by reading Lord of the Flies,
                     <br>a book of horror, and Fahrenheit 451, a book of dystopian nature. 
@@ -197,8 +205,8 @@
                     <br>showcasing their excelling ability to capture the elements of horror.
                 </p>
             </article>
-            <aside>
-                <p>
+            <aside> <!--Sidebar :moai:-->
+                <p id="list-hw">
                     Pt. 2 – Notetaking Guide – Lord of the Flies No. 4 – 85%<br>
                     Pt. 3 – Notetaking Guide – Fahrenheit 451 No. 1 – 80%<br>
                     Pt. 4 – Notetaking Guide – Fahrenheit 451 No. 2 – 80%<br>
@@ -234,10 +242,11 @@
                 allowfullscreen
                 >
                 <!--sandbox-->
-            <!--</iframe> <- Embedding is disabled here cuz mdn says security reasons :)))-->
+            <!--</iframe>-->
+            <p>Embedding is disabled here cuz mdn says security reasons :)) </p>
         </section>
     </main>
-    <footer>
+    <footer> <!--Footer (yay)-->
         <p>
             Ratio!
             Find me at <a href="https://google.com">https://google.com</a>

@@ -1,7 +1,88 @@
+* {
+    font-family:monospace;
+    
+}
+
 p {
-    color: cadetblue;
+    color: #5f9ea0;
 }
 
 h1 {
     color: grey;
+    font-size: 30px;
+}
+
+h2 {
+    color: #e09a18;
+    font-size: 26px;
+}
+
+h3 {
+    color: #c8c851;
+    font-size: 22px;
+}
+
+h4 {
+    color: #0f510f;
+    font-size: 18px;
+}
+
+h5 {
+    color: #145DA0;
+    font-size: 16px;
+}
+
+h6 {
+    color: #861a86;
+    font-size: 14x;
+}
+
+.hard {
+    color: burlywood;
+}
+.bold {
+    font-weight: bold;
+}
+
+
+code {
+    color: seagreen;
+}
+
+#list-hw {
+    color: #a7abbb
+}
+
+blockquote {
+    color: cornflowerblue
+}
+
+code {
+    color: #145DA0;
+    font-weight: bold;
+}
+
+input:focus {
+    color: blue;
+}
+
+.anchors:hover {
+    color: cadetblue;
+}
+
+
+
+.cascoding {
+    font-size: 40px
+}
+
+time {
+    color: #446f71;
+    font-weight: bolder;
+    font-size: 20px
+}
+
+a:visited {
+    color:#446f71;
+    font-weight: bold;
 }
