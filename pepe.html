@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Notes</title>
     <link href="css notes weeeeee.css" rel="stylesheet">
+    <link rel="shortcut icon" href="bigbag/media/channels4_profile.jpeg" type="image/x-icon">
     <style></style> <!--I don't need this rn but there you go-->
 </head> <!-- <- Contains metadata of the document -->
 
 <!--Above is Not-Displayed Content. Our Journey starts here!-->
 
 <body>
-    <p>Welcome to the <span><em><a href="#repo">SH885RyanHe</a></em> <strong>HTML Notes!</strong> <!-- <- Span Block --> </span> HTML is a WIP for me, so I'm just going to put in the stuff I learned here.</p> <!-- <- Printing with p element right here. --> 
-    <p>SH885 Continues to edit this page on:</p><time datetime="2022-11-09">Novemeber 12, 2022 in Shanghai, China</time>
-    <br>
-    <a id="click" href="https://github.com/SH885RyanHe/SH885RyanHe.github.io/blob/main/pepe.html" target="_blank">Source Code</a><br> <!-- <- Line Break --> 
+    <div class="Welcome">
+        <p data-line=1>Welcome to the  <span><em><a href="#repo">SH885RyanHe</a></em> <strong>HTML Notes!</strong> <!-- <- Span Block --> </span></p>
+            <p> HTML is a WIP for me, so I'm just going to put in the stuff I learned here.</p> <!-- <- Printing with p element right here. --> 
+        <p>SH885 Continues to edit this page on:</p><time datetime="2022-11-09">Novemeber 12, 2022 in Shanghai, China</time>
+        <br>
+        <a class="clickk" href="https://github.com/SH885RyanHe/SH885RyanHe.github.io/blob/main/pepe.html" target="_blank">Source Code</a><br> <!-- <- Line Break --> 
+    </div>  
 
-
-    <h1><strong>CHAPTER 1 - FUN-DEMENTAL HTML</strong></h1>
-    <div id="alphabets"> <!-- <- This is a division! --> 
-        <h1 id="Ae" style="color: maroon;">A</h1>
+    <h1>CHAPTER 1 - FUN-DEMENTAL HTML</h1>
+    <div class="alphabets"> <!-- <- This is a division! --> 
+        <h1 id="Ae" style="color: maroon; ">A</h1>
         <h2 id="Bee">B</h2>
         <h3 id="Cee">C</h3>
         <h4 id="Dee">D</h4>
@@ -32,14 +35,14 @@
 
     <div id="lists">
         <ul> <!-- <- BULLET POINT -->
-            <li><strong>abc</strong></li>
+            <p class="listp">abc</p>
             <li>american</li>
             <li>born</li>
             <li>canadian</li>
         </ul>
 
         <ol>
-            <li><em>How to Throw Short People</em></li>
+            <p class="listp">How to Throw Short People</p>
             <li>Pick one up</li>
             <li>Throw.</li>
             <li>Thanks for Reading!</li>
@@ -88,15 +91,14 @@
             Can someone just end me now-->
 
         <code class="cascoding">ID &lt; CLASS &lt; TYPE</code>
-        <br><br><br><br><br><br>
+        <br><br><br><br>
     </section>
 
     <div id="multimedia">
-        <img src="https://sh885ryanhe.github.io/bigbag/media/IMG_0820.JPG" width="1200" height="800" alt="andrew">
-        <video src="bigbag/media/stare.mp4" width="1200" height="600" controls loop>Video is gone... oopsies :(</video><!--stick autoplay into there-->
+        <img class="box" src="bigbag/media/IMG_0820.JPG" width="1200" height="800" alt="andrew"><br>
 
         <!--Here is an expert at work moving the src out of the video -->
-        <video controls>
+        <video controls class="box">
             <source src="bigbag/media/stare.mp4" type="video/mp4">
             <p>Hmm. Seems like the file got lost somewhere up above. Won't you look at something else here?</p>
         </video>
@@ -113,7 +115,7 @@
         <track> for webvtts <track kind="subtitles" src="subtitles_zh-cn.vtt" srclang="zh" label="Chinese">-->
     </div>
 
-   <hr> <!--Thematic Shift-->
+  
    <br><br>
 
    <h1>CHAPTER 2 - TABLE</h1>
@@ -140,7 +142,7 @@
         <span>Yes</span>
         <br>
 
-        <p>Do you like any of the following trees?</p><!--checkboxes-->
+        <p class="labp">Do you like any of the following trees?</p><!--checkboxes-->
         <label for="pine">Pine!</label>
             <input id="pine" name="teer" type="checkbox" value="pine">
         <br>
@@ -153,7 +155,7 @@
         <label for="nope">Nah bro</label>
             <input id="nope" name="teer" type="checkbox" value="nope">
         <br><br>
-        <p>Which one is the imposter?</p><!--radio-->
+        <p class="labp">Which one is the imposter?</p><!--radio-->
         <label for="wee">weeee</label>
             <input type="radio" name="ans" id="wee" value="weeeee">
         <br>
@@ -181,7 +183,9 @@
                 <option value="other"></option>  
             </datalist>
             <br>
+			<br>
             <label for="tree">Publish a TreeBlog</label>
+			<br>
                 <textarea id="tree" name="tree-blog" rows="10" cols="40">@tree-blog-110822:</textarea>
         <br><br><br>
         <input type="submit" value="Send your responses!">
@@ -197,16 +201,18 @@
         <a href="https://instagram.com">Post a story about this controversial statement!</a>
     </nav>
     </header>
+	<br><br>
     <main> <!--main content-->
         <section id="summ"> <!--Section of text-->
             <article> <!--Article :skull:-->
-                <p>
-                    Students were able to accomplish this by reading Lord of the Flies,
-                    <br>a book of horror, and Fahrenheit 451, a book of dystopian nature. 
-                    <br>In addition to that, students attempted to create horror stories themselves, 
-                    <br>showcasing their excelling ability to capture the elements of horror.
+                <p class="v_indentpoem">
+                    Students were able to accomplish this by reading Lord of the Flies, 
+                    a book of horror, and Fahrenheit 451, a book of dystopian nature. 
+                    In addition to that, students attempted to create horror stories themselves, 
+                    showcasing their excelling ability to capture the elements of horror.<br>
                 </p>
             </article>
+			
             <aside> <!--Sidebar :moai:-->
                 <p id="list-hw">
                     Pt. 2 – Notetaking Guide – Lord of the Flies No. 4 – 85%<br>
@@ -217,7 +223,7 @@
         </section>
         <section>
             <figure>
-                <img src="bigbag/media/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg" width="600" height="1200">
+                <img id="unsplash" src="bigbag/media/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg" >
                 <figcaption>
                     <p>Very cool Gradient by <strong>Thomas Lefebvre</strong> on Unsplash!</p>
                 </figcaption>
@@ -227,7 +233,7 @@
             </audio>
                 <br>
                 <span><strong>Casin by glue70</strong></span>
-            <embed src="bigbag/media/channels4_banner.jpeg">
+            <!--<embed src="bigbag/media/channels4_banner.jpeg">-->
     <h2>Embedding Subsection</h2>
             <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/iZW3l1n9Ins" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
             <br>
@@ -236,7 +242,7 @@
                 iframe {
                     border: none;
                 }
-            </style>
+            </style>-->
             <iframe
                 src="bigbag/media/Biology.pdf"
                 width="100%"
@@ -244,7 +250,7 @@
                 allowfullscreen
                 >
                 <!--sandbox-->
-            <!--</iframe>-->
+            </iframe>
             <p>Embedding is disabled here cuz mdn says security reasons :)) </p>
         </section>
     </main>
@@ -254,7 +260,30 @@
             Find me at <a href="https://google.com">https://google.com</a>
             <br>Thanks for reading.
         </p>
+		<p class="img-midt">Midterm Schedule</p>
     </footer>
+
+    
+<table>
+    <thead>
+        <th></th>
+        <th scope="col">Tree</th>
+        <th scope="col">Tere</th>
+    </thead>
+    <tbody>
+        <th scope="row">ok</th>
+        <td rowspan="2">throw.</td>
+        <td colspan="2">also throw but threw.</td>
+    </tbody>   
+<tfoot></tfoot><!--Placeholder lol-->
+</table>
+<p>
+    minmax width demo
+</p>
+
+    <div class=minmaxdemo><!--minmax width demo lol-->
+
+    </div>
 
 </body>
 </html>
@@ -280,5 +309,3 @@
         <tfoot></tfoot><!--Placeholder lol-->
     <!--</table>
    </div>-->
-
-   <p class="img-midt">Midterm Schedule</p>

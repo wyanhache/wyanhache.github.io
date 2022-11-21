@@ -1,7 +1,15 @@
 * {
     font-family:monospace;
-    
-    
+}
+
+@font-face {
+    font-family: Panton;
+    src:url(bigbag/media/Panton-BlackCaps.woff2);
+}
+
+@font-face {
+    font-family: PantonItalicCaps;
+    src:url(bigbag/media/Panton-BlackitalicCaps.woff2);
 }
 
 p {
@@ -12,6 +20,8 @@ p {
 h1 {
     color: grey;
     font-size: 30px;
+    font-family: Panton;
+    text-align: center;
 }
 
 h2, #Bee {
@@ -20,6 +30,7 @@ h2, #Bee {
 }
 
 #Ae, #Bee, #Cee, #Dee, #Yee, #Ef {
+    font-family: PantonItalicCaps;
     border: 3px solid #5f9ea0;
     border-radius: 15px;
     padding: 20px;
@@ -36,7 +47,7 @@ h3 {
 }
 
 h4 {
-    color: #0f510f !important; overrider
+    color: #0f510f !important;
     font-size: 18px;
 }
 
@@ -63,11 +74,12 @@ code {
 
 #list-hw {
     color: #a7abbb;
-    text-align: right;
+    text-align: left;
 }
 
 blockquote {
-    color: cornflowerblue
+    color: cornflowerblue;
+    font-size: 22px;
 }
 
 code {
@@ -80,7 +92,7 @@ input:focus {
 }
 
 .anchors:hover {
-    color: cadetblue;
+    color: #5f9ea0;
 }
 
 .cascoding {
@@ -90,21 +102,123 @@ input:focus {
 
 time {
     color: #446f71;
+    font-family: Panton;
     font-weight: bolder;
     font-size: 20px;
-    text-align: justify <- keep same with parent element
+    text-align: justify
 }
 
 a:visited {
     color:#446f71;
-    font-weight: bold; bgclr, opac
+    font-weight: bold;
+}
+
+a {
+    color: cadetblue;
 }
 
 .img-midt {
     background-image: url("./bigbag/media/IMG_2561.JPG");
-    background-size: cover;
-    background-position: ;
-    width: 1366px;
-    height: 1024px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 2732 / 2047;
+    resize: both;
+    overflow: hidden;
+}
+  
+img {
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+video {
+    display: block;
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
 }
 
+#unsplash {
+    width: 100%!important;
+    height: 300px;
+}
+
+.Welcome {
+    text-align: center;
+    padding: 50px 0px;
+    font-weight: bold;
+}
+.Welcome [data-line="1"], .Welcome [data-line="1"] * {
+    font-family: Panton, monospace!important;
+}
+.clickk {
+    font-family: PantonItalicCaps;
+    font-size: 12px;
+    display: inline-block;
+    padding-top: 16px;
+}
+
+pre {
+    font-family: Panton;
+    color:#446f71;
+}
+
+label {
+    font-family: PantonItalicCaps;
+    color: #446f71;
+}
+.labp {
+    font-family: Panton;
+}
+
+table td, table th {
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+}
+table td:first-child, table th:first-child {
+    border-left: 1px solid currentColor;
+}
+table {
+    border-top: 1px solid currentColor;
+}
+
+
+table {
+    border-spacing: 0px;
+}
+
+.minmaxdemo {
+    width: 50vw;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: gray;
+    height: 500px;
+    display: block;
+}
+
+form {
+    border: 1px dashed rgb(0 0 0/.5);
+    padding: 16px;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: fit-content
+}
+
+.v_indentpoem {
+    text-indent: 32pt;
+    margin-left: 32pt;
+    font-family: Panton;
+    color:#446f71;
+    width: clamp(500px, 70vw, 900px);
+    display: inline-block;
+    text-align: justify;
+}
