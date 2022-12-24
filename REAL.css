@@ -1,0 +1,53 @@
+@font-face {
+    font-family: se;
+    src: url(bigbag/media/SF-Pro-Display-HeavyItalic.otf);
+}
+
+@font-face {
+    font-family: ha;
+    src: url(bigbag/media/Helveticamazing.ttf);
+}
+
+
+* {
+    font-family: monospace;
+    color: #FFF;
+}
+
+.w {
+    font-family: se;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 50px;
+    
+       
+        background: -webkit-linear-gradient(#F8EDE3, #efe5d8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+
+
+}
+body {
+    background-image: url(bigbag/IMG_1494.jpeg);
+}
+
+.ok {
+    display: block;
+    position: absolute;
+    top: 96%;
+
+}
+
+.eok {
+    text-align: right;
+}
+
+#wow {
+    text-align: right;
+    margin: 50px;
+    font-family: ha;
+    font-size: 50px;
+}
