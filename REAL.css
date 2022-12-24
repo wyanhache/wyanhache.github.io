@@ -17,10 +17,12 @@
 .w {
     font-family: se;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
     margin-top: 50px;
     margin-right: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
     
        
         background: -webkit-linear-gradient(#F8EDE3, #efe5d8);
