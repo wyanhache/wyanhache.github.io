@@ -1,0 +1,70 @@
+/* poggers LOL */
+
+@font-face {
+    font-family: mr-bi;
+    src: url(../monsterrat-family/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: panton;
+    src: url(media/Panton-BlackCaps.woff2);
+}
+
+body {
+    font-family: mr-bi;
+    text-align: center;
+}
+
+#GFG::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    background-image: url(media/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg);
+    background-size: cover;
+    opacity: 0.2;
+}
+
+
+h1 {
+margin: 50px 150px;
+}
+
+#head {
+    font-family: panton !important;
+    align-items: center;
+    text-align:center;
+    font-size: 4em;
+    background: -webkit-linear-gradient(40deg, #5cb1b6, rgb(77, 134, 136));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#big {
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%, 0%);
+    margin: 0 auto;
+    
+}
+
+#big > div {
+    margin: 200px 0;
+}
+
+#big a {
+    color:#5f9ea0;
+    text-decoration: none;
+}
+
+#huh {
+    text-align: center; 
+    font-size: 20px; 
+    line-height: 1.6; 
+    margin: 0 400px;
+}
+
