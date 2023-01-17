@@ -16,11 +16,11 @@
 
 .w {
     font-family: se;
-    margin: 0 auto;
+    
     font-size: 16px;
     text-align: right;
-    margin-right: 5%;!important
-    min-width: 100%;
+    padding: 0 5% 0 0;
+    min-width: 50%;
     overflow-x: hidden;
     overflow-y: hidden;
     
@@ -52,4 +52,8 @@ body {
     margin: 5%;
     font-family: ha;
     font-size: 50px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
