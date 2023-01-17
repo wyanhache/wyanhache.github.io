@@ -1,0 +1,35 @@
+@font-face {
+	font-family: monst-1;
+	src: url(monsterrat-family/Montserrat-Bold.ttf);
+}
+
+body {
+	background: linear-gradient(-45deg, #404258, #474E68, #50577A, #6B728E);
+	background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#yeah {
+	color: #FFF;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: monst-1, sans-serif;
+
+	
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="idk.css">
+    <link rel="icon" type="image/x-icon" href="bigbag/media/1f387.png">
+</head>
+<body>
+    <p id="yeah">Who led you here?</p>
+</body>
+
+
+
+
+
+<script>
+    /* JS NOTES */
+    const dataType = ['\'yeah\'', 293.481, true, null, undefined, Symbol(), '{Object: key1, key2, key3}']
+
+    console.log(dataType)
+    
+    Math.random()
+    // Object.method()
+
+    const placeholderIf = input => {
+        if (typeof input === 'number') {
+            console.log(`${input} has been verified to be a tomato.`)
+        } else if (typeof input === 'string') {
+            console.log(`${input} has been verified to be a penguin.`)
+        } else {
+            console.log('Bzzzzzzzz...')
+        }
+    }
+
+    const placeholderSwitch = input => {
+        switch (typeof input) {
+            case 'number':
+                console.log('n')
+                break
+            case 'string':
+                console.log('str')
+                break
+            case 'boolean':
+                console.log('mayb')
+                break
+            case 'null':
+                console.log('no...')
+                break
+            case 'undefined':
+                console.log('over zero')
+                break
+            case 'symbol':
+                console.log('wtf ok')
+                break
+            case 'object':
+                console.log('yeah')
+                break
+            default:
+                console.log('wtf even is that')
+                break
+        }
+    }
+
+    placeholderIf(394)
+    placeholderSwitch('no')
+
+    const comparators = ['===', '!==', '>=', '<=', '>', '<']
+    let math = Math.floor(Math.random() * 6)
+
+    console.log(184 + `${comparators[math]}` + 184) 
+    
+    const loopUntilAllComparatorsAreCalledForTenTimesAlready = () => {
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 5; j >= 0; j--) {
+                console.log (`${comparators[j]} has been printed for ${i} times.`);
+            }
+        }
+    }
+
+    const loop = loopUntilAllComparatorsAreCalledForTenTimesAlready
+
+    loop()
+
+
+const minecraft = {
+    creator: 'Mojang Studios',
+    _date: 2009,
+    rating: 'popular',
+    minecraftYT() {
+       //document.getElementById('yeah').innerHTML = ''
+    }
+}
+
+const leagueOfLegends = {
+    creator: 'Riot Games',
+    _date: 2009,
+    rating: 'popular'
+}
+    
+    
+minecraft.minecraftYT()
+    
+
+</script>
+</html>
+
