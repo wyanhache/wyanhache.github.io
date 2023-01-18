@@ -10,55 +10,60 @@
     <link href="poggers.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
+<div id="scrol">
+    <p>Scroll Down</p>
+</div>
 <body>
-    <div id="GFG">
+    <div id="yes">
         <div id="bro">
             <h1 id="head"></h1>
                 <p id="huh">This is my archive of components in which I build on for personal growth in the field of web developing. Come and stay for a while, should you not?</p>
         </div>
 
-        <div id="scrol">
-            <p>Scroll Down</p>
-            <span>hint! try refreshing this page for more emo boy quotes (smh)</span>
-        </div>
+        
 
     </div>
 <div id="big">
     <section id="main-page-content">
         <h2>Main Page LIST OF CONTENTS</h2>
-        <a href="../index.html">Come and take a look at my Main Page! &gt;</a><br><br>
-        <p>Picture of a sheet of music by yours truly!<a href="IMG_1494.jpeg">&gt;</a></p>
-        <p>Helveticamazing by Jake Luedecke<a href="media/Helveticamazing.ttf">&gt;</a></p>
-        <p>SF Pro Display Heavy Italic by Apple<a href="media/SF-Pro-Display-HeavyItalic.otf">&gt;</a></p>
-        <p>SF Pro Display Black Italic by Apple<a href="media/SF-Pro-Display-BlackItalic.otf">&gt;</a></p>
+            <a href="../index.html">Come and take a look at my Main Page! &gt;</a><br><br>
+            <div id="m-p-link">
+                <p>Picture of a sheet of music by yours truly!<a href="IMG_1494.jpeg">&gt;</a></p>
+                <p>Helveticamazing by Jake Luedecke<a href="media/Helveticamazing.ttf">&gt;</a></p>
+                <p>SF Pro Display Heavy Italic by Apple<a href="media/SF-Pro-Display-HeavyItalic.otf">&gt;</a></p>
+                <p>SF Pro Display Black Italic by Apple<a href="media/SF-Pro-Display-BlackItalic.otf">&gt;</a></p>
+            </div>
     </section>
 
     <section id="html-notes-content"> 
         <h2>HTML WIP Notes LIST OF CONTENTS</h2>
         <a href="../pepe.html">Visit my HTML Notes! &gt;</a><br><br>
-        <p>Midterm Biology Review, Year 2022 Semester 1<a href="media/Biology.pdf">&gt;</a></p>
-        <p>Casin, by glue70<a href="media/casin.mp3">&gt;</a></p>
-        <p>YouTube channel banner from @TimeDeo<a href="media/channels4_banner.jpeg">&gt;</a></p>
-        <p>Favicon for Notes<a href="media/channels4_profile.jpeg">&gt;</a></p>
-        <p>Picture of Andrew Y<a href="media/IMG_0820.JPG">&gt;</a></p>
-        <p>Midterm Schedule (designed by yours truly) for Year 2022 Semester 1<a href="media/IMG_2561.JPG">&gt;</a></p>
-        <p>Panton, Lunar Client branding font and main font for Notes<a href="media/Panton-BlackCaps.woff2">&gt;</a></p>
-        <p>Panton Italic<a href="media/Panton-BlackitalicCaps.woff2">&gt;</a></p>
-        <p>big guy stares, YouTube video from @bigguyschlatt<a href="media/stare.mp4">&gt;</a></p>
-        <p>Gradient image, by Thomas Lefebvre on Unsplash<a href="media/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg">&gt;</a></p>
+        <div id="h-notes-link">
+            <p>Midterm Biology Review, Year 2022 Semester 1<a href="media/Biology.pdf">&gt;</a></p>
+            <p>Casin, by glue70<a href="media/casin.mp3">&gt;</a></p>
+            <p>YouTube channel banner from @TimeDeo<a href="media/channels4_banner.jpeg">&gt;</a></p>
+            <p>Favicon for Notes<a href="media/channels4_profile.jpeg">&gt;</a></p>
+            <p>Picture of Andrew Y<a href="media/IMG_0820.JPG">&gt;</a></p>
+            <p>Midterm Schedule (designed by yours truly) for Year 2022 Semester 1<a href="media/IMG_2561.JPG">&gt;</a></p>
+            <p>Panton, Lunar Client branding font and main font for Notes<a href="media/Panton-BlackCaps.woff2">&gt;</a></p>
+            <p>Panton Italic<a href="media/Panton-BlackitalicCaps.woff2">&gt;</a></p>
+            <p>big guy stares, YouTube video from @bigguyschlatt<a href="media/stare.mp4">&gt;</a></p>
+            <p>Gradient image, by Thomas Lefebvre on Unsplash<a href="media/thomas-lefebvre-mT1uxKaegSQ-unsplash.jpg">&gt;</a></p>
+        </div>
     </section>
 
-<section id="ymh-free-content">
-    <h2>YMH Free Review Archive</h2>
-    <a href="../tree.html">Visit my Review Sheets Archive! &gt;</a><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section id="ymh-free-content">
+        <h2>YMH Free Review Archive</h2>
+        <a href="../tree.html">Visit my Review Sheets Archive! &gt;</a>
+    </section>
 
 <p>This website uses <i><a href="https://open.spotify.com/track/5E30LdtzQTGqRvNd7l6kG5?si=08b409b940a8484d">Daddy Issues</a></i> by the Neighborhood for background music.</p>
 <p>By <a href="https://github.com/wyanhache">wyanhache</a> on January 1, 2023.</p>
-</section>
 
 
 
-    <audio src="media/daddy.mp3" type="audio/mp3" autoplay id="audio"></audio>
+
+    <audio src="media/daddy.mp3" type="audio/mp3" id="audio"></audio>
     <script>
         const oneArray = ['wyan','rainfall','ryan']
         const mathEw = Math.floor(Math.random() * 3)
@@ -98,6 +103,9 @@
         document.getElementById('head').innerHTML = twoArray[wtfOk];
         const vole = document.getElementById('audio');
         vole.volume = 0.1;
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
     </script>
 </body>
 </html>
