@@ -37,6 +37,7 @@ body {
 }
 body {
     background-image: url(bigbag/IMG_1494.jpeg);
+    background-size:auto;
 }
 
 .ok {
