@@ -39,5 +39,15 @@
         <h1><a href="bigbag/index.html"style="text-decoration:none;">Media Storage</a></h1>
         <h1><a href="jsn.html"style="text-decoration:none;">JavaScript Notes - Beginners</a></h1>
     </div>
+
+    <div style="display: none" id="hideAll">&nbsp;</div>
+    <script>
+        window.onload = function() { 
+            document.getElementById("hideAll").style.display = "none"; 
+        }
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 </html>
