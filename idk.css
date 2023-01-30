@@ -24,7 +24,6 @@ body {
 }
 
 #yeah {
-	color: #FFF;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -32,4 +31,9 @@ body {
 	font-family: monst-1, sans-serif;
 
 	
+}
+
+a {
+	color: #FFF;
+	user-select: none;
 }

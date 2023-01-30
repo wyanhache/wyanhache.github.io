@@ -8,6 +8,21 @@
     src: url(bigbag/media/Helveticamazing.ttf);
 }
 
+@font-face {
+    font-family: mstr;
+    src: url(monsterrat-family/Montserrat-Bold.ttf);
+}
+
+#hideAll {
+    position: fixed;
+    left: 0px; 
+    right: 0px; 
+    top: 0px; 
+    bottom: 0px; 
+    background-color: rgb(67 83 98);
+    z-index: 99; /* Higher than anything else in the document */
+}
+
 body {
     overscroll-behavior-y: none;
   }
@@ -62,4 +77,9 @@ body {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+#pf {
+    font-family: mstr, sans-serif;
+    font-size: 12px;
 }
