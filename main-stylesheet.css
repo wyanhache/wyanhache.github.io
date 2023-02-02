@@ -30,6 +30,7 @@ body {
     font-family: monospace;
     color: #FFF;
     overscroll-behavior-y: none;
+    scroll-behavior: smooth;
 }
 
 .w {
@@ -51,6 +52,22 @@ body {
 
 
 }
+
+#wewewe {
+    font-family: mstr, sans-serif;
+}
+
+#wewewe:hover {
+    font-family: mstr, sans-serif;
+    color:#446f71;
+    transition: .2s ease-in;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     background-image: url(bigbag/IMG_1494.jpeg);
     background-size:auto;
