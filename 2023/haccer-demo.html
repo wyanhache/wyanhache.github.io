@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haccer</title>
+    <link href="hack.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mid">
+        <a id="hack" href="../index.html" data-value="WYANHACHE">WYANHACHE</a>
+        <p>Hovering over is a life that morphs</p>
+    </div>
+    <figure id="image">
+        <a href="https://github.com/wyanhache/wyanhache.github.io"><img src="github-mark-white.png" width="40px" height="40px"></a>
+    </figure>
+</body>
+<script>
+    const alphabets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+
+
+    document.querySelector('a').onmouseover = event => {
+
+        let iterations = 0
+
+        let interval = setInterval(() => {
+            event.target.innerText = event.target.innerText.split("")
+
+                .map((letter, index) => {
+                    if (index < iterations) {
+                        return event.target.dataset.value[index]
+                    }
+                    return alphabets[Math.floor(Math.random() * 26)]
+                })
+
+                .join("")
+
+                if (iterations >= event.target.dataset.value.length) clearInterval(interval);
+
+                iterations+= 1/2
+
+            
+        }, 50)
+        
+    }
+</script>
+</html>

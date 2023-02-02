@@ -1,0 +1,43 @@
+@font-face {
+    font-family: r-mono-b;
+    src: url(Roboto_Mono/static/RobotoMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: r-mono;
+    src: url(Roboto_Mono/static/RobotoMono-Medium.ttf);
+}
+
+body {
+    background-color: #000;
+    color: #FFF;
+    overflow: hidden;
+}
+
+#mid {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#hack {
+    font-family: r-mono-b, monospace, sans-serif;
+    color: #FFF;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+p {
+    font-family: r-mono, monospace, sans-serif;
+    font-size: 1em;
+}
+
+#image {
+    position: absolute;
+    left: 50%;
+    top: 92.5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
