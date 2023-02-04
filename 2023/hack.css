@@ -12,6 +12,7 @@ body {
     background-color: #000;
     color: #FFF;
     overflow: hidden;
+    user-select: none;
 }
 
 #mid {
@@ -35,9 +36,7 @@ p {
 }
 
 #image {
-    position: absolute;
-    left: 50%;
-    top: 92.5%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    
 }
