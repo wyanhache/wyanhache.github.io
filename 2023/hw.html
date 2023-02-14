@@ -7,6 +7,16 @@
     <link rel="stylesheet" type="text/css" href="hw.css">
     <link rel="icon" type="image/x-icon" href="../bigbag/media/1f320.png">
     <title>wyanhache 2022-02 Winter Homework</title>
+    <script>
+        function textDisplay() {
+            const text = document.getElementById('hide')
+            if (text.style.display === "none") {
+                text.style.display = "block"
+            } else {
+                text.style.display = 'none'
+            }
+        }
+    </script>
 </head>
 <body>
     
@@ -113,15 +123,21 @@ Who was George Washington?</span>
 
 
 
-
+<div>
+    <p id="hide">The text listed above on this page should not be considered subjective opinion by the author. I was only asked to analyze above text for research, therefore it does not represent my own opinion whatsoever.</p>
+</div>
 
 
 <div id="image">
     <a href="https://github.com/wyanhache/wyanhache.github.io" target="_blank"><img src="github-mark.png" width="40px" height="40px"></a>
-    <p>A <a href="https://wyanhache.github.io">wyanhache</a> Project. February 2023.</p>
+    <p>A <a href="https://wyanhache.github.io">wyanhache</a> <a onclick="textDisplay()" id="a1" href="#hide">Project</a>. February 2023.</p>
 </div>
 
 
 
+
+
 </body>
+
 </html>
+
