@@ -1,6 +1,6 @@
 @font-face {
     font-family: sohne-reg;
-    src: url(ts/Test\ Söhne/TestSöhne-Buch.otf);
+    src: url(ts/Test\ Söhne/ts-b.otf);
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: sohne-sb;
-    src: url(ts/Test\ Söhne/TestSöhne-Halbfett.otf);
+    src: url(ts/ts/ts-h.otf);
 }
 
 * {
