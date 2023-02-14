@@ -133,7 +133,15 @@ Who was George Washington?</span>
     <p>A <a href="https://wyanhache.github.io">wyanhache</a> <a onclick="textDisplay()" id="a1" href="#hide">Project</a>. February 2023.</p>
 </div>
 
-
+<script>
+    window.onload = function() { 
+             
+            document.location.hash = ''
+        }
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+</script>
 
 
 
