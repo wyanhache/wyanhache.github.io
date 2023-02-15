@@ -17,11 +17,12 @@
     font-family:sohne-reg, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-body {
+#bigBigBox {
     border: solid 0px;
     margin: 5% 20% 0 20%;
     background-image:url(photo-1515549832467-8783363e19b6.jpg);
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 span {
@@ -66,3 +67,55 @@ image {
 #hide {
     display: block;
 }
+
+.box {
+    display: block; border: none; transition: all 500ms ease-in-out ; animation-delay: 100ms;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+
+#bigBody { 
+    border: solid 0px;
+    margin: 5% 10% 0 10%;
+    background-image:url(photo-1515549832467-8783363e19b6.jpg);
+    background-attachment: fixed;
+    scroll-behavior: smooth; 
+}
+
+body {
+    min-width: 300px;
+}
+
+#santi {
+    margin: 5% 0%;
+}
+
+#bigSanti {
+    height: 500px;
+    overflow-y: scroll;
+    
+}
+
+/* width */
+#bigSanti::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  #bigSanti::-webkit-scrollbar-track {
+    background: none;
+  }
+  
+  /* Handle */
+  #bigSanti::-webkit-scrollbar-thumb {
+    background: #2f4141
+  }
+  
+  /* Handle on hover */
+  #bigSanti::-webkit-scrollbar-thumb:hover {
+    background: #161c1d
+  }
