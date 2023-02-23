@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Newzald-bit;
+    src: url(2023/tnz/TestNewzald-BlackItalic.otf);
+}
+
+@font-face {
+    font-family: Sohne-reg;
+    src: url(2023/ts/ts/ts-b.otf);
+}
+
+@font-face {
+    font-family: Sohne-b;
+    src: url(2023/ts/ts/ts-h.otf);
+}
+
+#intro {
+    color: #FFF;
+    user-select: none;
+}
+
+a:visited {
+    color:#FFF
+}
+
+html {
+    font-family: Sohne-reg, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.gradient-01 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(90deg, #0C1E7F, #612897, #b40e6a);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+
+    opacity: 0.75;
+
+    /* above gradient was referenced from Ian Forrest's https://www.gradient-animator.com/ */
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+b {
+    font-family: Sohne-b, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: #FFF;
+}
+
+#scroll {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+#intro-link-1 {
+    text-decoration: none;
+}
+
+#ch-1 {
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    color: black!important;
+}
+
+.blp {
+    color:black
+}
+
+section {
+    position: absolute;
+    margin: 150px 150px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em
+}
+
+h3 {
+    font-size: 1.5em
+}
+
+h4 {
+    font-size: 1.25em
+}
+
+h5 {
+    font-size: 1em
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+.gradient-02 {
+        --bg-size: 400%;
+        --color-one: hsl(15 90% 55%);
+        --color-two: hsl(40 95% 55%);
+        background: linear-gradient(
+                      90deg,
+                      var(--color-one),
+                      var(--color-two),
+                      var(--color-one)
+                    ) 0 0 / var(--bg-size) 100%;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: move-bg 8s infinite linear;
+        transition: ease-in .1s;
+}
+
+@keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+
+#lists {
+    position:absolute;
+    top:175%;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ht-stylesheet.css" type="text/css">
+    <title>HTML Notes</title>
+    <link rel="shortcut icon" href="bigbag/media/1f320.png" type="image/x-icon">
+</head>
+
+
+<body>
+    <div id="intro">
+        <div class="gradient-01"></div>
+
+        <div class="centered">
+            <p>Welcome to the <b><i><a href="https://wyanhache.github.io" title="Landing Page - pf-wyanh" id="intro-link-1">wyanhache</a></i></b> HTML Notes</p>
+            <p>Front-end development is a persisting interest for me, so I will continue to put my stuff here.</p>
+            <p>This page is being updated on February 21, 2023. <a href="https://github.com/wyanhache/wyanhache.github.io" target="_blank">Source Code</a></p>
+        </div> 
+        
+        <img id="scroll"
+                    src="bigbag/media/icons8-scroll-96.png" width="36px" height="36px" draggable="false"
+        />
+    </div>  
+            
+    <section id="ch-1">
+        <h1>Chapter 1 - Basics</h1>
+        <h1 class='blp' id="aa">A</h1> <span id="a">H1 Heading</span>
+        <h2 class='blp' id="bb">B</h2> <span id="b">H2 Heading</span>
+        <h3 class='blp' id="cc">C</h3> <span id="c">H3 Heading</span>
+        <h4 class='blp' id="dd">D</h4> <span id="d">H4 Heading</span>
+        <h5 class='blp' id="ee">E</h5> <span id="e">H5 Heading</span>
+        <h6 class='blp' id="ff">F</h6> <span id="f">H6 Heading</span><br><br>
+        <p style="color: grey;">Sometimes you will get a good gradient when you hover over it ... and sometimes you won't. All you got to do is hover again.</p>
+    </section>
+
+    <section id="lists">
+        <ol>
+            <p>How do you throw short people?</p>
+            <li>Pick one up</li>
+            <li>Throw the person</li>
+            <li>Rinse and repeat</li>
+        </ol>
+
+        
+    </section>
+
+<script>
+    const blp = document.querySelectorAll('.blp')
+    console.log(blp)
+
+
+    
+    
+/*const func = () => {
+
+    let randomColor = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0')
+    let randomColor1 = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0')
+
+
+    console.log(randomColor)
+    
+    blp.forEach(e => {
+        e.addEventListener('mouseover', function () {
+
+
+
+            e.className = 'gradient-02'
+            e.style.setProperty('--color-one', randomColor);
+            e.style.setProperty('--color-two', randomColor1);
+            
+            e.addEventListener('mouseleave', function () {
+                e.style.setProperty('--color-one', 'unset');
+            e.style.setProperty('--color-two', 'unset');
+            })
+
+        })
+    })
+
+    blp.forEach(e => {
+        e.addEventListener('mouseleave', function () {
+            e.className = 'blp'
+            
+        })
+    })
+}
+
+func()*/
+
+document.querySelectorAll(".blp").forEach(e => {
+    e.addEventListener('mouseover', function () {
+        e.classList.add('gradient-02')
+        e.style.setProperty('--color-one', '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0'));
+        e.style.setProperty('--color-two', '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0'));
+        
+        e.addEventListener('mouseleave', function () {
+            e.style.setProperty('--color-one', 'currentColor');
+            e.style.setProperty('--color-two', 'currentColor');
+            e.classList.remove('gradient-02')
+        })
+    })
+})
+</script>
+<script>
+    window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+</script>
+
+
+
+
+
+
+</body>
+</html>
