@@ -11,13 +11,20 @@
 
 
 <body>
+    <nav>
+        <a href=""><img src="bigbag/media/1f320.png" height="36" width="36"></a>
+        <a href="https://sky.shiiyu.moe/stats/wyanh" target="_blank">SkyCrypt</a>
+        <a href="https://github.com/wyanhache" target="_blank">Github</a>
+        <a href="https://wyanhache.github.io" target="_blank">Landing Page</a>
+        <img src="bigbag/media/discord-mark-white.svg" width='30' height="30" style="padding: 0.5vw"><span>rainfall#1593</span>
+    </nav>
     <div id="intro">
         <div class="gradient-01"></div>
 
         <div class="centered">
             <p>Welcome to the <b><i><a href="https://wyanhache.github.io" title="Landing Page - pf-wyanh" id="intro-link-1">wyanhache</a></i></b> HTML Notes</p>
             <p>Front-end development is a persisting interest for me, so I will continue to put my stuff here.</p>
-            <p>This page is being updated on February 21, 2023. <a href="https://github.com/wyanhache/wyanhache.github.io" target="_blank">Source Code</a></p>
+            <p>This page is being updated on February 21, 2023. <a href="https://github.com/wyanhache/wyanhache.github.io" target="_blank" style="text-decoration: underline;">Source Code</a></p>
         </div> 
         
         <img id="scroll"
@@ -25,7 +32,7 @@
         />
     </div>  
             
-    <section id="ch-1">
+    <section id="ch-1" style="margin-top: 150px;">
         <h1>Chapter 1 - Basics</h1>
         <h1 class='blp' id="aa">A</h1> <span id="a">H1 Heading</span>
         <h2 class='blp' id="bb">B</h2> <span id="b">H2 Heading</span>
@@ -35,16 +42,29 @@
         <h6 class='blp' id="ff">F</h6> <span id="f">H6 Heading</span><br><br>
         <p style="color: grey;">Sometimes you will get a good gradient when you hover over it ... and sometimes you won't. All you got to do is hover again.</p>
     </section>
-
-    <section id="lists">
-        <ol>
-            <p>How do you throw short people?</p>
-            <li>Pick one up</li>
-            <li>Throw the person</li>
+    <section id="ch-1-list">
+        <ol class="lists">
+            <b class="list-title">How to throw short people</b>
+            <li>Pick up a short person at our store</li>
+            <li>Throw it</li>
             <li>Rinse and repeat</li>
         </ol>
 
-        
+        <ul class="lists">
+            <b class="list-title">Grocery List for an Alien</b>
+            <li>Hydrogen bombs</li>
+            <li>Radianite</li>
+            <li>Humans for research</li>
+        </ul>
+
+        <dl class="lists">
+            <b><dt class="list-title">Description of People</dt></b>
+            <dd>
+                Human
+            </dd>
+            <dd>60% water</dd>
+            <dd>Not so organic.</dd>
+        </dl>
     </section>
 
 <script>

@@ -13,6 +13,9 @@
     src: url(2023/ts/ts/ts-h.otf);
 }
 
+* {
+    text-decoration: none;
+}
 #intro {
     color: #FFF;
     user-select: none;
@@ -29,13 +32,13 @@ html {
 }
 
 .gradient-01 {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
 
     background: linear-gradient(90deg, #0C1E7F, #612897, #b40e6a);
     background-size: 400% 400%;
@@ -93,8 +96,7 @@ b {
 }
 
 section {
-    position: absolute;
-    margin: 150px 150px;
+    margin: 0 150px;
 }
 
 h1 {
@@ -144,7 +146,46 @@ h6 {
     }
   }
 
-#lists {
-    position:absolute;
-    top:175%;
+.lists {
+    display: inline-block;
+    position: inherit;
+    text-align:left;
+    padding: 5%;
+    border: #000 solid 2px;
+    border-radius: 10px;
+}
+
+nav {
+    position: relative;
+    vertical-align: middle;
+    z-index: 999;
+    text-align: center;
+    font-size: 1vw;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+nav > a {
+    padding: 30px;
+}
+
+.list-title:hover {
+    transition: ease-in 2s;
+    
+    --bg-size: 400%;
+    background: linear-gradient(
+                  90deg,
+                  #567189,
+                  #7B8FA1,
+                  #567189
+                ) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: move-bg 4s infinite linear;
+}
+
+.list-title {
+    color: #567189;
 }
