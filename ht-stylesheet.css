@@ -15,6 +15,7 @@
 
 * {
     text-decoration: none;
+    
 }
 #intro {
     color: #FFF;
@@ -96,7 +97,7 @@ b {
 }
 
 section {
-    margin: 0 150px;
+    margin: 150px 150px;
 }
 
 h1 {
@@ -146,13 +147,14 @@ h6 {
     }
   }
 
+
 .lists {
     display: inline-block;
-    position: inherit;
     text-align:left;
     padding: 5%;
     border: #000 solid 2px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 nav {
@@ -160,7 +162,7 @@ nav {
     vertical-align: middle;
     z-index: 999;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1em;
     color: #FFF;
     display: flex;
     align-items: center;

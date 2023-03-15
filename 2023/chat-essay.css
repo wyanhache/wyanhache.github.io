@@ -1,0 +1,448 @@
+
+
+@font-face {
+   font-family: ts-b;
+   src: url(ts/ts/ts-b.otf);
+}
+
+
+@font-face {
+   font-family: nz;
+   src: url(tnz/TestNewzald-BlackItalic.otf);
+}
+
+
+@font-face {
+   font-family: ts-h;
+   src: url(ts/ts/ts-h.otf);
+}
+
+
+
+
+
+     .lst-kix_c4l7058nqhnc-1>li:before {
+       content: "\0025cb  "
+     }
+
+     .lst-kix_c4l7058nqhnc-0>li:before {
+       content: "\0025cf  "
+     }
+
+     .lst-kix_c4l7058nqhnc-2>li:before {
+       content: "\0025a0  "
+     }
+
+     .lst-kix_c4l7058nqhnc-4>li:before {
+       content: "\0025cb  "
+     }
+
+     .lst-kix_c4l7058nqhnc-3>li:before {
+       content: "\0025cf  "
+     }
+
+     ul.lst-kix_c4l7058nqhnc-4 {
+       list-style-type: none
+     }
+
+     ul.lst-kix_c4l7058nqhnc-5 {
+       list-style-type: none
+     }
+
+     ul.lst-kix_c4l7058nqhnc-2 {
+       list-style-type: none
+     }
+
+     .lst-kix_c4l7058nqhnc-8>li:before {
+       content: "\0025a0  "
+     }
+
+     ul.lst-kix_c4l7058nqhnc-3 {
+       list-style-type: none
+     }
+
+     ul.lst-kix_c4l7058nqhnc-0 {
+       list-style-type: none
+     }
+
+     ul.lst-kix_c4l7058nqhnc-1 {
+       list-style-type: none
+     }
+
+     .lst-kix_c4l7058nqhnc-5>li:before {
+       content: "\0025a0  "
+     }
+
+     .lst-kix_c4l7058nqhnc-6>li:before {
+       content: "\0025cf  "
+     }
+
+     .lst-kix_c4l7058nqhnc-7>li:before {
+       content: "\0025cb  "
+     }
+
+     ul.lst-kix_c4l7058nqhnc-8 {
+       list-style-type: none
+     }
+
+     ul.lst-kix_c4l7058nqhnc-6 {
+       list-style-type: none
+     }
+
+     ul.lst-kix_c4l7058nqhnc-7 {
+       list-style-type: none
+     }
+
+     ol {
+       margin: 0;
+       padding: 0
+     }
+
+     table td,
+     table th {
+       padding: 0
+     }
+
+     .c1 {
+       margin-left: 72pt;
+       padding-top: 0pt;
+       text-indent: -36pt;
+       padding-bottom: 0pt;
+       line-height: 2.1818181818181817;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .c21 {
+       padding-top: 18pt;
+       padding-bottom: 6pt;
+       line-height: 2.0;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .c3 {
+       color: #000000;
+       font-weight: 700;
+       text-decoration: none;
+       vertical-align: baseline;
+       font-size: 12pt;
+       font-family: ts-b;
+       font-style: normal
+     }
+
+     .c30 {
+       padding-top: 0pt;
+       padding-bottom: 3pt;
+       line-height: 2.0;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: center
+     }
+
+     .c4 {
+       padding-top: 20pt;
+       padding-bottom: 6pt;
+       line-height: 2.0;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .c8 {
+       padding-top: 0pt;
+       padding-bottom: 0pt;
+       line-height: 1.0;
+       orphans: 2;
+       widows: 2;
+       text-align: left;
+       height: 11pt
+     }
+
+     .c27 {
+       padding-top: 0pt;
+       text-indent: 36pt;
+       padding-bottom: 0pt;
+       line-height: 2.0;
+       orphans: 2;
+       widows: 2;
+       text-align: center
+     }
+
+     .c0 {
+       padding-top: 0pt;
+       text-indent: 36pt;
+       padding-bottom: 0pt;
+       line-height: 2.0;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .c9 {
+       padding-top: 0pt;
+       padding-bottom: 0pt;
+       line-height: 2.0;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .c19 {
+       padding-top: 0pt;
+       padding-bottom: 0pt;
+       line-height: 1.15;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .c29 {
+       padding-top: 0pt;
+       padding-bottom: 0pt;
+       line-height: 1.15;
+       orphans: 2;
+       widows: 2;
+       text-align: right
+     }
+
+     .c28 {
+       padding-top: 0pt;
+       padding-bottom: 0pt;
+       line-height: 1.2545454545454544;
+       orphans: 2;
+       widows: 2;
+       text-align: center
+     }
+
+     .c11 {
+       padding-top: 0pt;
+       padding-bottom: 0pt;
+       line-height: 1.0;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .c16 {
+       text-decoration-skip-ink: none;
+       font-size: 10pt;
+       -webkit-text-decoration-skip: none;
+       color: #1155cc;
+       text-decoration: underline
+     }
+
+     .c18 {
+       -webkit-text-decoration-skip: none;
+       color: #1155cc;
+       text-decoration: underline;
+       text-decoration-skip-ink: none
+     }
+
+     .c6 {
+       color: #000000;
+       text-decoration: none;
+       vertical-align: baseline;
+       font-style: normal
+     }
+
+     .c25 {
+       color: #404040;
+       text-decoration: none;
+       vertical-align: baseline;
+       font-style: normal
+     }
+
+     .c10 {
+       font-weight: 400;
+       font-size: 12pt;
+       font-family: ts-b
+     }
+
+     .c17 {
+       font-weight: 400;
+       font-size: 10pt;
+       font-family: ts-b
+     }
+
+     .c5 {
+       font-size: 12pt;
+       font-family: ts-b;
+       font-weight: 400
+     }
+
+     .c24 {
+       background-color: #ffffff;
+       max-width: 468pt;
+       margin: 0 auto!important;
+       padding-top: 100px!important;
+     }
+
+     .c15 {
+       font-weight: 400;
+       font-size: 11pt;
+       font-family: ts-b
+     }
+
+     .c23 {
+       color: #000000;
+       text-decoration: none;
+       vertical-align: baseline
+     }
+
+     .c7 {
+       color: inherit;
+       text-decoration: inherit
+     }
+
+     .c2 {
+       width: 33%;
+       height: 1px
+     }
+
+     .c14 {
+       height: 11pt
+     }
+
+     .c22 {
+       font-size: 9pt
+     }
+
+     .c26 {
+       background-color: #ffffff
+     }
+
+     .c12 {
+       font-size: 12pt
+     }
+
+     .c20 {
+       font-size: 10pt
+     }
+
+     .c13 {
+       font-style: italic
+     }
+
+     .title {
+       padding-top: 0pt;
+       color: #000000;
+       font-size: 26pt;
+       padding-bottom: 3pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     .subtitle {
+       padding-top: 0pt;
+       color: #666666;
+       font-size: 15pt;
+       padding-bottom: 16pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     li {
+       color: #000000;
+       font-size: 11pt;
+       font-family: ts-b
+     }
+
+     p {
+       margin: 0;
+       color: #000000;
+       font-size: 11pt;
+       font-family: ts-b
+     }
+
+     h1 {
+       padding-top: 20pt;
+       color: #000000;
+       font-size: 20pt;
+       padding-bottom: 6pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     h2 {
+       padding-top: 18pt;
+       color: #000000;
+       font-size: 16pt;
+       padding-bottom: 6pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     h3 {
+       padding-top: 16pt;
+       color: #434343;
+       font-size: 14pt;
+       padding-bottom: 4pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     h4 {
+       padding-top: 14pt;
+       color: #666666;
+       font-size: 12pt;
+       padding-bottom: 4pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     h5 {
+       padding-top: 12pt;
+       color: #666666;
+       font-size: 11pt;
+       padding-bottom: 4pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }
+
+     h6 {
+       padding-top: 12pt;
+       color: #666666;
+       font-size: 11pt;
+       padding-bottom: 4pt;
+       font-family: ts-b;
+       line-height: 1.15;
+       page-break-after: avoid;
+       font-style: italic;
+       orphans: 2;
+       widows: 2;
+       text-align: left
+     }

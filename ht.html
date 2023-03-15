@@ -16,7 +16,7 @@
         <a href="https://sky.shiiyu.moe/stats/wyanh" target="_blank">SkyCrypt</a>
         <a href="https://github.com/wyanhache" target="_blank">Github</a>
         <a href="https://wyanhache.github.io" target="_blank">Landing Page</a>
-        <img src="bigbag/media/discord-mark-white.svg" width='30' height="30" style="padding: 0.5vw"><span>rainfall#1593</span>
+        <img src="2023/discord-mark-white.svg" width='30' height="30" style="padding: 0.5vw"><spanm id="discord">rainfall#1593</span>
     </nav>
     <div id="intro">
         <div class="gradient-01"></div>
@@ -42,6 +42,7 @@
         <h6 class='blp' id="ff">F</h6> <span id="f">H6 Heading</span><br><br>
         <p style="color: grey;">Sometimes you will get a good gradient when you hover over it ... and sometimes you won't. All you got to do is hover again.</p>
     </section>
+    
     <section id="ch-1-list">
         <ol class="lists">
             <b class="list-title">How to throw short people</b>
@@ -122,6 +123,19 @@ document.querySelectorAll(".blp").forEach(e => {
         })
     })
 })
+
+const d = document.getElementById('discord')
+
+
+    d.addEventListener('mousedown', function () {
+        navigator.clipboard.writeText('rainfall#1593')
+        d.innerHTML = 'Copied!'
+    })
+
+    d.addEventListener('mouseup', function () {
+        d.innerHTML = 'rainfall#1593'
+    })
+
 </script>
 <script>
     window.onbeforeunload = function () {
