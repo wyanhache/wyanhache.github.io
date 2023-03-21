@@ -7,7 +7,29 @@
     <title>Landing Board - pf-wyanh</title>
     <link href="main-stylesheet.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="bigbag/media/1f320.png">
-
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC9hIXLU5hpgvrnISONa5deV7gy0OnRy1o",
+          authDomain: "web-project-c9634.firebaseapp.com",
+          projectId: "web-project-c9634",
+          storageBucket: "web-project-c9634.appspot.com",
+          messagingSenderId: "332567189846",
+          appId: "1:332567189846:web:475bdbf75a4bee49e69ef7",
+          measurementId: "G-M53W9K0C6K"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </head>
 <body>
     <div style="display: none" id="hideAll">&nbsp;</div>

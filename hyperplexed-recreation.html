@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <link href="hpp.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7308cf0505.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, delectus quo quis labore nihil eveniet totam harum quaerat vero pariatur ut possimus commodi aut nobis molestias eaque adipisci necessitatibus magnam!</p>
+    <div id="hover-box">
+        <div id="cards">
+            <div class="card">
+                <div class="card-content">
+                    <p class="hb-title">A rudimentary look at <span>Hyperplexed's Hover Effect from Linear.app</span></p><br><br><br><br><br>
+                    <p>What I learned:</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fa-solid fa-sliders" style="color: #ffffff; margin: 1em 1em 0 1em; font-size: 1.5em;"></i>
+                    <p class="hb-title">Setting parameters</p>
+                    <ol>
+                        <li>Setting appropriate sizes for boxes, flexbox, <i>gap</i>.</li>
+                        <li>Resetting user agent stylesheets & positioning.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fa-solid fa-shuffle" style="color: #ffffff; margin: 1em 1em 0 1em; font-size: 1.5em;"></i>
+                    <p class="hb-title">Flex is annoying 💪</p>
+                    <ol>
+                        <li>align-items for wrap spacing issues</li>
+                        <li>justify-content, align-items for center spacing</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fa-solid fa-square-up-right" style="color: #ffffff; margin: 1em 1em 0 1em; font-size: 1.5em;"></i>
+                    <p class="hb-title">Radial Gradient for mouse backdrop</p>
+                    <ol>
+                        <li>Using listeners to track mouse position <span class="hb-title">(getBoundingClientRect)</span> and creating circular backgrounds</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fa-solid fa-question" style="color: #ffffff; margin: 1em 1em 0 1em; font-size: 1.5em;"></i>
+                    <p class="hb-title">Problems arose as always</p>
+                    <ol>
+                        <li>Not able to create glowing effect on borders (t=245s)</li>
+                        <li>Not able to extend the glowing to neighboring borders</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <i class="fa-solid fa-circle-info" style="color: #ffffff; margin: 1em 1em 0 1em; font-size: 1.5em;"></i>
+                    <p><span style="font-size: 2em" class="hb-title">By wyanhache</span> March 21, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("cards").onmousemove = e => {//onmousemove do ...
+for(const card of document.getElementsByClassName("card")) {//for... of loop
+const rect = card.getBoundingClientRect(),//getting client dimensions
+      x = e.clientX - rect.left,
+      y = e.clientY - rect.top;//getting cursor position
+
+card.style.setProperty("--mouse-x", `${x}px`);
+card.style.setProperty("--mouse-y", `${y}px`);//setting css variable
+};
+}
+</script>
+</html>
