@@ -8,6 +8,17 @@
     src: url(2023/ts/ts/ts-h.otf);
 }
 
+@media (max-width: 840px) {
+    div#cards {
+        align-content: start;
+        overflow-y: visible;
+        padding: 32px;
+    }
+    div#hover-box {
+        height: fit-content;
+    }
+}
+
 :root {
     /*root is ideal for global variables*/
     --bg-color: rgb(20, 20, 20);
@@ -68,7 +79,6 @@ font-weight: bold;
     width: 275px;
     height: 250px;
     border-radius: 7.5px;
-    cursor: pointer; /*click*/
     position: relative;
 }
 .card:hover::before {
@@ -107,3 +117,11 @@ z-index: 3;
     z-index: 2; /*for correct positioning logic (LOGIK)*/
 }
 
+#placeholder {
+    height: 100vh;
+}
+
+a {
+    position: relative;
+    z-index: 999;
+}
