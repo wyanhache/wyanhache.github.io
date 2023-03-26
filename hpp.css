@@ -266,6 +266,7 @@ a {
 #list {
     height: 42.5px;
     width: 27px;
+
 }
 
 #list-of-contents{
@@ -274,6 +275,7 @@ a {
     left: calc(100% - 57px);
     cursor: pointer;
     position: fixed;
+    z-index: 10000;
 }
 
 #actual-list {
