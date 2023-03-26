@@ -3,18 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperplexed Recreations</title>
+    <link rel="icon" type="image/x-icon" href="bigbag/media/1f320.png">
     <link href="hpp.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7308cf0505.js" crossorigin="anonymous"></script>
+    <script defer src="hover.js"></script>
 </head>
 <body>
-    <p id="placeholder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, delectus quo quis labore nihil eveniet totam harum quaerat vero pariatur ut possimus commodi aut nobis molestias eaque adipisci necessitatibus magnam!</p>
+    <div id="list-of-contents">
+        <img id="list" src="2023/menucard.fill@10x.png">
+    </div>
+    <div id="actual-list">
+        ok
+    </div>
+    <div id="placeholder">
+        <video autoplay muted loop id="ph-video" src="2023/pexels-rostislav-uzunov-7513671.mp4"></video>
+        <p id="ph-text"><a href="https://youtube.com/hyperplexed"><span class="ph-g">Aspiring</span></a> to be induitably <a href="https://wyanhache.github.io"><span class="ph-g">inspiring</span></a></p>
+        <a href="#hover-box" id="pf-i">
+            <img id="ph-img" src='2023/chevron.down@10x.png'>
+        </a>
+    </div>
     <div id="hover-box">
         <div id="cards">
             <div class="card">
                 <div class="card-content">
-                    <p class="hb-title">A rudimentary look at <span>Hyperplexed's Hover Effect from Linear.app</span></p><br><br><br><br><br>
+                    <i class="fa-solid fa-1" style="color: #ffffff; margin: 1em 1em 0 1em; font-size: 1.5em;"></i>
+                    <p class="hb-title">A rudimentary look at <span>Hyperplexed's Hover Effect from Linear.app</span></p><br><br>
                     <p>What I learned:</p>
                 </div>
             </div>
@@ -65,17 +80,10 @@
             </div>
         </div>
     </div>
-</body>
-<script>
-    document.getElementById("cards").onmousemove = e => {//onmousemove do ...
-for(const card of document.getElementsByClassName("card")) {//for... of loop
-const rect = card.getBoundingClientRect(),//getting client dimensions
-      x = e.clientX - rect.left,
-      y = e.clientY - rect.top;//getting cursor position
+    <div id="twitch">
+        <div id="tv">
 
-card.style.setProperty("--mouse-x", `${x}px`);
-card.style.setProperty("--mouse-y", `${y}px`);//setting css variable
-};
-}
-</script>
+        </div>
+    </div>
+</body>
 </html>
