@@ -40,7 +40,7 @@ document.getElementById("cards").onmousemove = e => {//onmousemove do ...
     let listNumber = document.documentElement.style.getPropertyValue('--amount');
     const menu = loc.addEventListener('click', () => {
         if (num % 2 === 1) {
-            ccc.style.setProperty("--amount", '-100%')
+            ccc.style.setProperty("--amount", '0%')
             console.log('what')
         } else if (num % 2 === 0) {
             ccc.style.setProperty("--amount", '0%')
@@ -48,3 +48,11 @@ document.getElementById("cards").onmousemove = e => {//onmousemove do ...
         num++
         console.log(num)
     })
+
+const clickAway = document.querySelectorAll(".clickaway")
+
+clickAway.forEach((e) => {
+    e.addEventListener('click', () => {
+        ccc.style.setProperty("--amount", '-100%')
+    })
+})
