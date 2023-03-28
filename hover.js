@@ -56,3 +56,37 @@ clickAway.forEach((e) => {
         ccc.style.setProperty("--amount", '-100%')
     })
 })
+
+const tSub = document.getElementsByClassName("t-text")[0]; //getting the first element with this class
+const tSubTwo = document.getElementsByClassName("t-text")[1];
+
+const createWord = (text, index) => {
+    const word = document.createElement("span"); //create a span element
+    word.innerHTML = `${text}`; //storing the text inside the span element
+    word.classList.add("t-text-word"); //add class
+    word.style.transitionDelay = `${index * 40}ms` //WHAT THE FUCK IS AN INDEX????
+
+    return word;
+}
+
+const addWordOne = (text, index) => {
+    tSub.appendChild(createWord(text, index))
+}
+
+const addWordTwo = (text, index) => {
+    tSubTwo.appendChild(createWord(text, index))
+}
+
+const createSub = text => {
+    text.split(' ').map(addWordOne)
+}
+
+const createSubTwo = text => {
+    text.split(' ').map(addWordTwo)
+}
+
+// putting everything into span tag
+
+createSub("This is the Twitch Hover Gradient from Hyperplexed.")
+createSub("A fantastic effect comes from a fantastic developer.")
+
