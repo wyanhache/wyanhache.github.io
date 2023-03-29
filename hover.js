@@ -88,5 +88,15 @@ const createSubTwo = text => {
 // putting everything into span tag
 
 createSub("This is the Twitch Hover Gradient from Hyperplexed.")
-createSub("A fantastic effect comes from a fantastic developer.")
+createSub("A fantastic effect that comes from a fantastic developer.")
 
+
+const left = document.getElementById("s-left");
+
+const handleMove = e => {
+  left.style.width = `${e.clientX / window.innerWidth * 100}%`;
+}
+
+document.onmousemove = e => handleMove(e);
+
+document.ontouchmove = e => handleMove(e.touches[0]);
