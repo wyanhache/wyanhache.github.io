@@ -1,11 +1,11 @@
 @font-face {
     font-family: se;
-    src: url(bigbag/media/SF-Pro-Display-HeavyItalic.otf);
+    src: url(2023/ts/ts/ts-h.otf);
 }
 
 @font-face {
     font-family: ha;
-    src: url(bigbag/media/Helveticamazing.ttf);
+    src: url(2023/tnz/TestNewzald-BlackItalic.otf);
 }
 
 @font-face {
@@ -64,13 +64,17 @@ body {
     
 }
 
+#title {
+    transform: translateY(50%);
+}
+
 a {
     text-decoration: none;
 }
 
 body {
-    background-image: url(bigbag/IMG_1494.jpeg);
-    background-size:auto;
+    background-image: url(2023/F4AD640D-A630-4E42-9E2F-894D58FCD17C.png);
+    background-size:600% 200%;
 }
 
 .ok {
@@ -88,7 +92,7 @@ body {
     text-align: right;
     margin: 5% 5% 3% 5%;
     font-family: ha;
-    font-size: 50px;
+    font-size: 5em;
     user-select: none;
     
 }
@@ -100,4 +104,10 @@ body {
 #pf {
     font-family: mstr, sans-serif;
     font-size: 12px;
+}
+
+img {
+    position: relative;
+    height: 18px;
+    aspect-ratio: 1;
 }
