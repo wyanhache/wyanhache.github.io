@@ -74,7 +74,8 @@ a {
 
 body {
     background-image: url(2023/F4AD640D-A630-4E42-9E2F-894D58FCD17C.png);
-    background-size:600% 200%;
+    background-size:800% 100%;
+    background-attachment: fixed;
 }
 
 .ok {
