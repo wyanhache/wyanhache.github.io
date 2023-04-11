@@ -7685,3 +7685,16 @@ body {
   height: 100vh;
   cursor:grabbing;
 }
+
+#credits {
+  margin: 50px 0;
+  font-family: ts-b;
+}
+
+#credits > a {
+  text-decoration: none;
+}
+
+b {
+  font-family: ts-h;
+}
