@@ -45,7 +45,8 @@ img {
     background-size: 40px 40px;
     background-position: 0px 0px;
     position: absolute;
-    top: 0%
+    top: 0%;
+    z-index: -999;
 }
 
 a {
