@@ -8,9 +8,12 @@
     src: url(../2023/ts/ts/ts-h.otf);
   }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1060px) {
     #con {
         flex-direction:column;
+    }
+    body {
+        overflow-y:scroll;
     }
 }
 body {
