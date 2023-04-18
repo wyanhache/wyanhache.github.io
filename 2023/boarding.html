@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+@font-face {
+    font-family: ts-b;
+    src: url(../2023/ts/ts/ts-b.otf);
+  }
+  
+  @font-face {
+    font-family: ts-h;
+    src: url(../2023/ts/ts/ts-h.otf);
+  }
+
+@media only screen and (max-width: 1060px) {
+    #big {
+        transform: rotate(90deg);
+    }
+    body {
+        overflow-y:scroll;
+    }
+}
+
+
+
+
+        #big {
+width:90vw;
+  aspect-ratio: 3;
+  border: 1px solid grey;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+#small {
+  position: relative;
+  height: 11vmin;
+  width: 100%;
+  background-image: url(Screenshot\ 2023-04-16\ at\ 12.03.36.png);
+  object-fit:cover;
+}
+
+#grad {
+  height: 100%;
+  width: 100%;
+      background-image: radial-gradient(
+        rgba(0, 0, 0, .1) 8%,
+        transparent 8%
+    );
+    background-size: 40px 40px;
+    background-position: 0px 0px;
+}
+
+#dotted {
+  width: 1px;
+  height: calc(100% - 11vmin);
+  border: #000 1px dotted;
+  position: absolute;
+  left: 75em;
+  bottom: 0;
+}
+
+#white-dotted {
+  width: 1px;
+  height: 11vmin;
+  border: #fff 1px dotted;
+  position: absolute;
+  left: 75em;
+  z-index: 999;
+  top: 0;
+}
+
+.bp-top-text {
+    position: absolute;
+    font-family: ts-h;
+    color: #fff;
+    font-size: 2em;
+    left: 15%;
+    transform: translateX(-50%);
+
+}
+    </style>
+</head>
+<body>
+    <div id="big">
+        <div id="dotted"></div>
+        <div id="white-dotted"></div>
+        <div id="small">
+            <p class="bp-top-text"> wyanhache Airways</p>
+        </div>
+        <div id="grad"></div>
+      </div>
+</body>
+</html>
