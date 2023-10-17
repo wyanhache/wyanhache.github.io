@@ -39,12 +39,14 @@ document.getElementById("cards").onmousemove = e => {//onmousemove do ...
     let num = 0;
     let listNumber = document.documentElement.style.getPropertyValue('--amount');
     const menu = loc.addEventListener('click', () => {
-        if (num % 2 === 1) {
+        if (num % 3 === 0) {
             ccc.style.setProperty("--amount", '0%')
             console.log('what')
-        } else if (num % 2 === 0) {
-            ccc.style.setProperty("--amount", '0%')
-        }
+        } else if (num % 3 === 1) {
+            ccc.style.setProperty("--amount", '100%')
+        } else if (num % 3 === ) {
+            ccc.style.setProperty("--amount", '-100%')
+        } 
         num++
         console.log(num)
     })
