@@ -16,7 +16,14 @@
         transform: translateY(50px);
     }
 }
-
+@keyframes initialDown2 {
+    0% {
+        transform: translateY(-100px);
+    } 
+    100% {
+        transform: translateY(0px);
+    }
+}
 
 @media only screen and (max-width: 1060px) {
     #con {
@@ -62,6 +69,13 @@ img#link {
     position: absolute;
     z-index: 999;
     margin: 30px;
+    transform: translateY(0);
+}
+
+#introtext {
+    position: absolute!important;
+    left: 100px;
+    top: 22.5px
 }
 
 img#bot {
@@ -122,4 +136,12 @@ p, a {
 
 #title {
     text-align: center;
+}
+
+#links {
+    animation: .5s initialDown2
+}
+
+b {
+    font-family: ts-h;
 }
